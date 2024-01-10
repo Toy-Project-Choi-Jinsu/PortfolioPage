@@ -15,12 +15,12 @@ function App() {
 
   return (
     <PortfolioPage>
-      <div>
+      <Contentes>
         <AboutMe aboutMe={aboutMeRef} />
         <Training training={trainingRef} />
         <Awards awards={awardsRef} />
         <Project project={projectRef} />
-      </div>
+      </Contentes>
       <SideBar
         aboutMe={aboutMeRef}
         training={trainingRef}
@@ -36,6 +36,12 @@ export default App;
 const PortfolioPage = styled.div`
   display: flex;
   /* align-items: center; */
-  justify-content: center;
+  /* justify-content: center; */
   height: 2500px;
 `;
+
+const Contentes = styled.div`
+width: 70%;
+padding: 30px 10% 30px 10%;
+border: 1px solid black;
+`

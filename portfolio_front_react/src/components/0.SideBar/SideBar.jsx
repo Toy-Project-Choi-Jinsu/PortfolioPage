@@ -26,9 +26,7 @@ const SideBar = ({ aboutMe, training, awards, project }) => {
 
     return (
         <SideBarBox>
-            <div onClick={() => { moveToContent(aboutMe) }} style={setCSS(0)}>
-                About Me
-            </div>
+            <div onClick={() => { moveToContent(aboutMe) }} style={setCSS(0)}>About Me</div>
             <div onClick={() => { moveToContent(training) }} style={setCSS(500)}>Training</div>
             <div onClick={() => { moveToContent(awards) }} style={setCSS(1000)}>Awards</div>
             <div onClick={() => { moveToContent(project) }} style={setCSS(1500)}>Project</div>
@@ -46,7 +44,7 @@ const SideBarBox = styled.div`
     justify-content: space-between;
     padding: 10px;
     top: 30%;
-    right: 5%;
+    right: 3%;
     width: 100px;
     height: 200px;
     border: 1px solid black;
