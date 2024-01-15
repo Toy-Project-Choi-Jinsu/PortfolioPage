@@ -18,18 +18,20 @@ const SideBar = ({ aboutMe, training, awards, project }) => {
         contentRef.current?.scrollIntoView({ behavior: 'smooth' })
     }
 
-    const setCSS = (contentPosition) => {
-        if (position >= contentPosition && position < contentPosition + 500) {
+    const setCSS = (contentRef) => {
+        const refTopPosition = contentRef.current?.getBoundingClientRect().top;
+        const refBottomPosition = contentRef.current?.getBoundingClientRect().bottom
+        if (refTopPosition < 55 && refBottomPosition > 5) {
             return { fontSize: "22px", color: "black", fontWeight: "bold" }
         }
     }
 
     return (
         <SideBarBox>
-            <div onClick={() => { moveToContent(aboutMe) }} style={setCSS(0)}>About Me</div>
-            <div onClick={() => { moveToContent(training) }} style={setCSS(500)}>Training</div>
-            <div onClick={() => { moveToContent(awards) }} style={setCSS(1000)}>Awards</div>
-            <div onClick={() => { moveToContent(project) }} style={setCSS(1500)}>Project</div>
+            <div onClick={() => { moveToContent(aboutMe) }} style={setCSS(aboutMe)}>About Me</div>
+            <div onClick={() => { moveToContent(training) }} style={setCSS(training)}>Training</div>
+            <div onClick={() => { moveToContent(awards) }} style={setCSS(awards)}>Awards</div>
+            <div onClick={() => { moveToContent(project) }} style={setCSS(project)}>Project</div>
         </SideBarBox>
     )
 }

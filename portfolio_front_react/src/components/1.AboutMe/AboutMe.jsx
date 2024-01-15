@@ -6,25 +6,26 @@ import Education from './1-3.Education/Education'
 import Skills from './1-4.Skills/Skills'
 
 const AboutMe = ({ aboutMe }) => {
-    return (
-        <AboutMeBox ref={aboutMe}>
-            <Title>ABOUT ME</Title>
-            <div className='introContact'>
-                <Intro />
-                <Contact />
-            </div>
-            <Education />
-            <hr color={"whitesmoke"} />
-            <Skills />
-            <hr color={"whitesmoke"} />
-        </AboutMeBox>
-    )
+  return (
+    <AboutMeBox ref={aboutMe}>
+      <Title>👨🏻‍💻ABOUT ME</Title>
+      <div className='introContact'>
+        <Intro />
+        <Contact />
+      </div>
+      <Education />
+      <hr color={"whitesmoke"} />
+      <Skills />
+      <hr color={"whitesmoke"} />
+    </AboutMeBox>
+  )
 }
 
 export default AboutMe
 
 const AboutMeBox = styled.div`
     width: 100%;
+    margin-bottom: 50px;
   & .introContact{
     display: flex;
     justify-content: space-between;

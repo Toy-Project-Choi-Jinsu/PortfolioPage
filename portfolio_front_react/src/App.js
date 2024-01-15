@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import SideBar from "./components/0.SideBar/SideBar";
 import AboutMe from "./components/1.AboutMe/AboutMe";
 import Training from "./components/2.Training/Training";
@@ -43,5 +43,5 @@ const PortfolioPage = styled.div`
 const Contentes = styled.div`
 width: 70%;
 padding: 30px 10% 30px 10%;
-border: 1px solid black;
+/* border: 1px solid black; */
 `

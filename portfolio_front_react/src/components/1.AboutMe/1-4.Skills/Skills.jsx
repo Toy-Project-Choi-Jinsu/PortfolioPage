@@ -21,11 +21,11 @@ const Skills = () => {
     return (
         <SkillsBox>
             <Title>SKILLS</Title>
-            {setSkills("Backend", ["하나", "둘", "셋", "넷"])}
+            {setSkills("Backend", ["Node.js (Express)", "Javascript", "Flutter (Dart), Android (Kotlin)", "MySQL, FireBase (FireStore)", "AWS EC2"])}
             <hr color={"whitesmoke"} />
-            {setSkills("Frontend", ["하나", "둘", "셋"])}
+            {setSkills("Frontend", ["HTML, CSS, Javascript", "React.js", "Flutter (Dart), Android (Kotlin)"])}
             <hr color={"whitesmoke"} />
-            {setSkills("Tool", ["하나", "둘", "셋", "넷"])}
+            {setSkills("Tool", ["Git, GitHub", "Notion", "VSCode, Android Studio, IntelliJ", "Jupiter Notebook, Google Colab"])}
         </SkillsBox>
     )
 }
