@@ -9,6 +9,7 @@ import styled from "styled-components"
 import { GoMoveToTop } from "react-icons/go";
 
 function App() {
+  document.body.style.height = '100vh';
   const pageRef = useRef();
   const aboutMeRef = useRef();
   const trainingRef = useRef();
@@ -42,15 +43,12 @@ export default App;
 
 const PortfolioPage = styled.div`
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
-  height: 2500px;
+  overflow: hidden;
 `;
 
 const Contentes = styled.div`
 width: 70%;
 padding: 30px 10% 30px 10%;
-/* border: 1px solid black; */
   & svg{
     position: fixed;
     right: 18%;
@@ -62,5 +60,12 @@ padding: 30px 10% 30px 10%;
     color: white;
     background-color: #5477AD;
     cursor: pointer;
+
+    @media only screen and (max-width: 430px) {
+      z-index: 10;
+      right: 2%;
+      background-color: white;
+      color: #5477AD;
+    }
   }
 `

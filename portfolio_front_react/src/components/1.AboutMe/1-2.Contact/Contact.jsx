@@ -25,6 +25,11 @@ export default Contact
 const ContactBox = styled.div`
     width: 40%;
     margin-top: -40px;
+
+    @media only screen and (max-width: 430px) {
+        width: 100%;
+        margin-top: 0;
+    }
 `
 
 const Title = styled.h2`

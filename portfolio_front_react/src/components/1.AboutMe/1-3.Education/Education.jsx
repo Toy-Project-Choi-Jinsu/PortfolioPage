@@ -45,4 +45,21 @@ const Contents = styled.div`
             font-weight: bold;
         }
     }
+
+    @media only screen and (max-width: 430px) {
+        flex-direction: column;
+
+        & .dateAndSchool{
+            width: 100%;
+            margin-bottom: 10px;
+            & .date{
+                font-size: 14px;
+                color: grey;
+            }
+
+            & .school{
+                font-weight: bold;
+            }
+        }
+    }
 `

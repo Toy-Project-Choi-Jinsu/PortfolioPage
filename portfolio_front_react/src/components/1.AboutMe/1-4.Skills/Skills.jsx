@@ -53,4 +53,12 @@ const Contents = styled.div`
         width: 20%;
         font-weight: bold;
     }
+
+    @media only screen and (max-width: 430px) {
+        flex-direction: column;
+
+        & .skillCategori{
+            margin-bottom: 5px;
+        }
+    }
 `

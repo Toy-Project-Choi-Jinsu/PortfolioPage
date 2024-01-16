@@ -30,6 +30,10 @@ const AboutMeBox = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @media only screen and (max-width: 430px) {
+        flex-direction: column;
+    }
   }
 
   & hr{

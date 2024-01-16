@@ -17,4 +17,8 @@ export default Intro
 const IntroBox = styled.div`
   margin-top: 30px;
   width: 55%;
+
+  @media only screen and (max-width: 430px) {
+    width: 100%;
+  }
 `
